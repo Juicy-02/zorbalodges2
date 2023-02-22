@@ -1,9 +1,30 @@
-<ion-content>
-  <ion-row>
-    <ion-col class="left1"  size>left1</ion-col>
-    <ion-col class="menu">
-      menu
-    </ion-col>
-    <ion-col class="right1">right1</ion-col>
-  </ion-row>
+ <ion-content>
+  <ion-grid >
+    <ion-row>
+      <ion-col class="left1" size="auto">
+        <div class="side-margin">  </div>
+      </ion-col>
+      <ion-col class="menu">
+        menu
+      </ion-col>
+      <ion-col class="right1" size="auto">
+        <div class="side-margin">  </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid> 
+  <ion-grid>
+    <li *ngFor="let comp of comps;index as i">   
+      <h1 *ngIf="i === 0">he</h1>   
+      <h1 *ngIf="comp === 'am'">is</h1>   
+      <h1 >{{comp}} ({{i}})</h1>   
+      <app-main-picture></app-main-picture>
+    </li>
+  </ion-grid> 
+  <ion-grid>
+    <!-- <intro></intro> -->
+  </ion-grid>
+  <ion-grid>
+    <!-- <aminities></aminities> -->
+  </ion-grid>
+
 </ion-content>

@@ -1,9 +1,25 @@
-.left1 {
-    text-align: center;
-    
+// .left1 {
+// //   --ion-grid-width-xs: 1%;
+// //   --ion-grid-width-sm: 50px;
+// //   --ion-grid-width-md: 100px;
+// //   --ion-grid-width-lg: 150px;
+// }
+ion-grid {
+    --ion-grid-padding: 0;
+    --ion-grid-column-padding: 0;
+    --ion-grid-row-padding: 0;
 }
 
-.right1 {
+
+.side-margin {
     text-align: center;
-    size: 3 ;
+    width: 120px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .side-margin {
+        text-align: center;
+        width: 0px;
+    }
 }
